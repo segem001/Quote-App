@@ -9,3 +9,22 @@
             <li>Quote Posted:{{quote.Timeposted|dateCount}}days ago</li>
         </ul>
     <div>
+        <div class="row">
+            <div class="col-md-4">
+                <button (click)="upvote(i)">
+
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+                     UpVote{{quote.votes}}
+                  </button>
+            </div>
+            <div class="col-md-4">
+                <app-downvote></app-downvote>
+            </div>
+            <div class="col-md-4">
+                <app-delete (delete)="myDeletes($event,i)"></app-delete>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
