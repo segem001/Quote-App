@@ -1,0 +1,11 @@
+.part{
+    height: 350px;
+    background-color: #2C9D90;
+}
+ul{
+    padding-top: 20px;
+}
+ul li{
+    list-style: none;
+    margin-top: 5px;
+}
