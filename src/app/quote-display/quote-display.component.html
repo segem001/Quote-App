@@ -1,1 +1,11 @@
 <app-quote-details (quoteData)="displayFunction($event)"></app-quote-details>
+<div class="container-fluid part">
+    <div class="display" *ngFor="let quote of quotes; let i=index" >
+    <ul>
+            <li>Name:{{quote.Name}}</li>
+            <li>Author:{{quote.Author}}</li>
+            <li appHighlight *ngIf="quote.votes === count && quote.votes>0">Quote:{{quote.Quote}}</li>
+            <li>Timeposted:{{quote.Timeposted|date}}</li>
+            <li>Quote Posted:{{quote.Timeposted|dateCount}}days ago</li>
+        </ul>
+    <div>
