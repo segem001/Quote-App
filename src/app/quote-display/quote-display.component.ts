@@ -12,3 +12,30 @@ export class QuoteDisplayComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  quotes:Quote[]=[
+    new Quote ("Dominic","Allan","Happy coding",new Date())
+  ]
+  displayFunction(data:any){
+ data.Timeposted=new Date(data.Timeposted)
+ this.quotes.push(data)
+  }
+  myDeletes(deletes:boolean,index:number){
+      if (deletes) {
+        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].Name}?`)
+  
+        if (toDelete){
+          this.quotes.splice(index,1)
+        }
+   
+  }
+  
+    }
+    upvote(index:number){
+      this.quotes[index].votes = this.quotes[index].votes + 1;
+      if (this.quotes[index].votes>this.count) {
+        this.count=this.quotes[index].votes;
+      }
+      
+    }
+
+  }
