@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  This is a website designed and developed under the requirements of Moringa School in fulfillment of one's obligation to complete Weekly independent project.
  # Live link to this project's GitHub Pages.
 GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.
-### [View Live Site](git@github.com:segem001/Quote-App.git)
+### [View Live Site](https://segem001quoteapp.netlify.app/)
 ## Description
 This is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
 
